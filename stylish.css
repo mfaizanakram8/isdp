@@ -1,0 +1,184 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container background to mimic your design */
+  .outer-bg {
+   
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: sans-serif;
+  }
+  
+  /* Wrapper for main content */
+  .content-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+  
+  /* Subheading */
+  .subheading {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: blue;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Main Heading */
+  .main-heading {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 4rem;
+  }
+  
+  /* Testimonial Card Wrapper */
+  .testimonial-card-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  /* Card Content */
+  .testimonial-card {
+    position: relative;
+    background: transparent;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Avatar Container */
+  .avatar-container {
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Name */
+  .testimonial-name {
+    font-weight: bold;
+    color: #1f2937;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  /* Highlighted text color */
+  .highlighted {
+    color: #ff5722;
+  }
+  
+  /* Stars Container */
+  .stars-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+  }
+  
+  /* Testimonial Text */
+  .testimonial-text {
+    color: #4b5563;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Dots Container */
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Dot styling injected by JS for background color. */
+  
+  /* Navigation Buttons (Mobile) */
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  /* Shared Nav Button styling */
+  .nav-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Circle Button wrapper for images */
+  .circle-button {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Border style button */
+  .border-btn {
+    padding: 2rem;
+    background: transparent;
+    border: 1px solid rgba(25, 24, 37, 0.1);
+  }
+  
+  /* Purple background button */
+  .purple-btn {
+    padding: 1.5rem;
+    background: #8b5cf6;
+  }
+  
+  /* Arrow images in the buttons */
+  .arrow-img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Desktop/Tablet buttons hidden by default on mobile */
+  .desktop-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none; /* Will display in JS on wider screens */
+  }
+  
+  /* Positioning for left/right arrow */
+  #prev-desktop {
+    left: -60px;
+  }
+  #next-desktop {
+    right: -60px;
+  }
+  
+  /* Responsive: show desktop arrows above 768px, hide mobile arrows */
+  @media (min-width: 768px) {
+    #prev-desktop,
+    #next-desktop {
+      display: block;
+    }
+    .mobile-nav {
+      display: none;
+    }
+  }
+  
