@@ -1,0 +1,114 @@
+/* Basic reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .maincont4 {
+    font-family: "Arial", sans-serif;
+    background: #0f2335;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  .heading span {
+   /* a goldish color */
+  }
+  
+  .initiatives-section {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;       /* taller container for bigger cards */
+    overflow: visible;
+    margin: 40px auto;
+    perspective: 1000px; /* allows the 3D effect */
+  }
+  
+  .carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* needed for 3D positioning */
+    transition: transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Each card in the carousel */
+  .carousel-card {
+    position: absolute;
+    width: 400px;        /* bigger card width */
+    max-width: 90%;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transform-origin: center center;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 260px;       /* fix the image height so text is always visible below */
+    object-fit: cover;
+    display: block;
+  }
+  
+  .carousel-card .card-content {
+    padding: 15px 20px;
+  }
+  
+  .carousel-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #222;
+  }
+  
+  .carousel-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Arrows */
+  .carousel-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  /* space between the arrow buttons */
+    margin-top: 20px;
+  }
+  
+  .arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffc107;
+    transition: transform 0.2s;
+  }
+  
+  .arrow-btn:hover {
+    transform: scale(1.1);
+  }
+  
